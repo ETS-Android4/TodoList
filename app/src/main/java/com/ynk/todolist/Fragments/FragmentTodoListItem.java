@@ -218,7 +218,7 @@ public class FragmentTodoListItem extends Fragment implements AAH_FabulousFragme
         inflater.inflate(R.menu.menu_todolistitem, menu);
         ImageButton orderButton = (ImageButton) menu.findItem(R.id.action_order).getActionView();
         orderButton.setImageResource(R.drawable.ic_order);
-        orderButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        orderButton.setBackgroundColor(getResources().getColor(R.color.gPrimary));
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT);
         params.rightMargin = 20;

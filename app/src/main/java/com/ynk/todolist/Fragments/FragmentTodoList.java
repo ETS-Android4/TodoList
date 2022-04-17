@@ -185,7 +185,7 @@ public class FragmentTodoList extends Fragment {
         toolbar.setSubtitle(getString(R.string.todoListPageSubTitle));
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
 
-//uncomment        tvContinuesCount = view.findViewById(R.id.tvContinuesCount);
+//Uncomment        tvContinuesCount = view.findViewById(R.id.tvContinuesCount);
 //        tvCompletedTask = view.findViewById(R.id.tvCompletedTask);
 //        tvExpiredCount = view.findViewById(R.id.tvExpiredCount);
 
@@ -227,7 +227,7 @@ public class FragmentTodoList extends Fragment {
             int continuesCount = dao.getTaskCount(user.getUserId(), "0", sdf.format(new Date()));
             int completedCount = dao.getTaskCount(user.getUserId(), "1", sdf.format(new Date()));
             int expiredCount = dao.getTaskCount(user.getUserId(), "-1", sdf.format(new Date()));
-//uncomment            tvContinuesCount.setText(String.valueOf(continuesCount));
+//Uncomment            tvContinuesCount.setText(String.valueOf(continuesCount));
 //            tvCompletedTask.setText(String.valueOf(completedCount));
 //            tvExpiredCount.setText(String.valueOf(expiredCount));
         }
@@ -350,7 +350,7 @@ public class FragmentTodoList extends Fragment {
     private class ActionModeCallback implements ActionMode.Callback {
         @Override
         public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-            Tools.setSystemBarColor(getActivity(), R.color.blue_grey_700);
+            Tools.setSystemBarColor(getActivity(), R.color.gPrimary);
             mode.getMenuInflater().inflate(R.menu.menu_todolist, menu);
             return true;
         }

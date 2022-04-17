@@ -62,9 +62,9 @@ public class AdapterTodoList extends RecyclerView.Adapter<AdapterTodoList.ViewHo
             tvListName = v.findViewById(R.id.tvListName);
             tvListAddDate = v.findViewById(R.id.tvListAddDate);
             ibMore = v.findViewById(R.id.ibMore);
-//            ivCircleView = v.findViewById(R.id.ivCircleView);
+            ivCircleView = v.findViewById(R.id.ivCircleView);
             parentView = v.findViewById(R.id.parentView);
-//            layoutChecked = v.findViewById(R.id.layoutChecked);
+            layoutChecked = v.findViewById(R.id.layoutChecked);
         }
     }
 
@@ -82,8 +82,8 @@ public class AdapterTodoList extends RecyclerView.Adapter<AdapterTodoList.ViewHo
         holder.tvListName.setText(todoList.getListName());
         holder.tvListAddDate.setText(sdf.format(todoList.getListAddDate()));
 
-//        holder.ivCircleView.setColorFilter(colors[todoList.getListPriority()], PorterDuff.Mode.SRC_ATOP); Uncomment
-        //holder.ivCircleView.setBackgroundColor(colors[todoList.getListPriority()]);
+        holder.ivCircleView.setColorFilter(colors[todoList.getListPriority()], PorterDuff.Mode.SRC_ATOP);
+        holder.ivCircleView.setBackgroundColor(colors[todoList.getListPriority()]);
 
         holder.parentView.setActivated(selected_items.get(position, false));
 
@@ -132,14 +132,13 @@ public class AdapterTodoList extends RecyclerView.Adapter<AdapterTodoList.ViewHo
     }
 
     private void toggleCheckedIcon(ViewHolder holder, int position) {
-//        Uncomment
-//        if (selected_items.get(position, false)) {
-//            holder.layoutChecked.setVisibility(View.VISIBLE);
-//            if (current_selected_idx == position) resetCurrentIndex();
-//        } else {
-//            holder.layoutChecked.setVisibility(View.GONE);
-//            if (current_selected_idx == position) resetCurrentIndex();
-//        }
+        if (selected_items.get(position, false)) {
+            holder.layoutChecked.setVisibility(View.VISIBLE);
+            if (current_selected_idx == position) resetCurrentIndex();
+        } else {
+            holder.layoutChecked.setVisibility(View.GONE);
+            if (current_selected_idx == position) resetCurrentIndex();
+        }
     }
 
     public void toggleSelection(int pos) {

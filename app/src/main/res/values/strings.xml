@@ -10,8 +10,8 @@
 
 
     <string name="loginErrorMessage">Check the username and password. Please!</string>
-    <string name="todoListPageTitle">Hi, %1s</string>
-    <string name="todoListPageSubTitle">welcome to To Do List</string>
+    <string name="todoListPageTitle">Hello, %1s</string>
+    <string name="todoListPageSubTitle">Welcome to UR Lineups</string>
 
     <string name="loginTitle">Sıgn In</string>
     <string name="loginUserTitle">Username</string>
@@ -61,7 +61,7 @@
     <string name="todoListItemStatusCompleted">Completed</string>
     <string name="todoListItemStatusExpired">Delayed</string>
     <string name="todolistTitle">To Do List</string>
-    <string name="todolistItemTitle">%1s Items</string>
+    <string name="todolistItemTitle">%1s Tasks</string>
 
 
     <string name="todoListMoreUpdate">Update</string>
@@ -77,33 +77,36 @@
     <string name="CANCEL">Cancel</string>
 
 
-    <string name="todoListItemDeleteTask">Todo List Item Deleted</string>
-    <string name="todoListItemDeleteTaskMessage">Do you want to delete Todo List Item?</string>
-    <string name="todoListItemEndTask">Todo List Item Task Finished</string>
-    <string name="todoListItemEndTaskMessage">Are you sure want to finish item status?</string>
+    <string name="todoListItemDeleteTask">Lineup Task Deleted</string>
+    <string name="todoListItemDeleteTaskMessage">Do you want to delete Todo List Task?</string>
+    <string name="todoListItemEndTask">Lineup Task Finished</string>
+    <string name="todoListItemEndTaskMessage">Are you sure want to finish task status?</string>
     <string name="todoListItemDelete">Delete</string>
     <string name="todoListItemUpdate">Update</string>
     <string name="todoListItemComplete">Complete</string>
     <string name="todoListItemDialogHeaderNewItem">Create Your Lineup!</string>
-    <string name="todoListItemDialogHeaderUpdateItem">Update Lineup Item</string>
+    <string name="todoListItemDialogHeaderUpdateItem">Update Lineup Task</string>
     <string name="todoListItemDialogSubmitNew">Create</string>
     <string name="todoListItemDialogSubmitUpdate">Update</string>
     <string name="todoListItemDialogClose">Close</string>
     <string name="todoListItemDialogName">List Item Name</string>
-    <string name="todoListItemDialogDeadline">List Item Deadline</string>
-    <string name="todoListItemDialogDescription">List Item Description</string>
+<!--    <string name="todoListItemDialogDeadline">List Item Deadline</string>-->
+    <string name="todoListItemDialogDeadline">Due Date</string>
+<!--    <string name="todoListItemDialogDescription">List Item Description</string>-->
+
+    <string name="todoListItemDialogDescription">Description</string>
     <string name="todoListDialogHeaderCreate">Create Lineup</string>
     <string name="todoListDialogHeaderUpdate">Update Lineup</string>
     <string name="todoListDialogName">Lineup Name</string>
     <string name="todoListDialogPriority">Lineup Priority</string>
     <string name="todoListEmptyMessage">Add new lineups from + button</string>
-    <string name="todoListItemsEmptyMessage">Empty Lineup Items</string>
+    <string name="todoListItemsEmptyMessage">Add Lineup tasks with + button</string>
 
 
-    <string name="todoListItemDeleteMessage">Lineup Item is deleted.</string>
-    <string name="todoListItemStatusMessage">Lineup Item is finish.</string>
-    <string name="todoListItemUpdateMessage">Lineup Item is update.</string>
-    <string name="todoListItemCreateMessage">Lineup Item is create.</string>
+    <string name="todoListItemDeleteMessage">Lineup Task is deleted.</string>
+    <string name="todoListItemStatusMessage">Lineup Task is finish.</string>
+    <string name="todoListItemUpdateMessage">Lineup Task is update.</string>
+    <string name="todoListItemCreateMessage">Lineup Task is create.</string>
 
     <string name="todoListDeleteMessage">Lineup is deleted.</string>
     <string name="todoListStatusMessage">Lineup is finish.</string>
