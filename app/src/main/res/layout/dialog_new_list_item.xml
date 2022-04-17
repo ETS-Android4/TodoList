@@ -29,7 +29,7 @@
                 android:paddingRight="@dimen/spacing_large"
                 android:text="@string/todoListItemDialogHeaderNewItem"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-                android:textColor="@color/colorPrimaryLight" />
+                android:textColor="@color/gPrimary" />
 
 
             <LinearLayout

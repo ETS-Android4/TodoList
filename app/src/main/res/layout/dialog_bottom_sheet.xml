@@ -24,7 +24,7 @@
             android:layout_width="?attr/actionBarSize"
             android:layout_height="?attr/actionBarSize"
             android:padding="@dimen/spacing_large"
-            android:tint="@color/blue_500"
+            android:tint="@color/gPrimary"
             app:srcCompat="@drawable/ic_preview" />
 
         <TextView
@@ -57,7 +57,7 @@
             android:layout_width="?attr/actionBarSize"
             android:layout_height="?attr/actionBarSize"
             android:padding="@dimen/spacing_large"
-            android:tint="@color/blue_500"
+            android:tint="@color/gPrimary"
             app:srcCompat="@drawable/ic_email" />
 
         <TextView

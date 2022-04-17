@@ -4,10 +4,10 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_todolists"
-            android:icon="@drawable/ic_todolist"
-            android:title="@string/menu_todolist" />
+<!--        <item-->
+<!--            android:id="@+id/nav_todolists"-->
+<!--            android:icon="@drawable/ic_todolist"-->
+<!--            android:title="@string/menu_todolist" />-->
     </group>
     <group
         android:id="@+id/grp_2"

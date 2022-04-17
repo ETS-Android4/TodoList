@@ -6,7 +6,7 @@
 
     <string name="menu_todolist">Todo Lists</string>
     <string name="menu_profile">Profile</string>
-    <string name="menu_exit">Exit</string>
+    <string name="menu_exit">Logout</string>
 
 
     <string name="loginErrorMessage">Check the username and password. Please!</string>
@@ -68,8 +68,8 @@
     <string name="todoListMoreDelete">Delete</string>
     <string name="todoListMoreShare">Share</string>
 
-    <string name="todolistShareBottomSheetPreview">Pdf Preview</string>
-    <string name="todolistShareBottomSheetEmail">Send Email</string>
+    <string name="todolistShareBottomSheetPreview">View as PDF</string>
+    <string name="todolistShareBottomSheetEmail">Email Selected List</string>
 
     <string name="todolistPdfExportMailSubject">About ToDoList</string>
     <string name="todolistPdfExportMailInfo">Sending Mail…</string>
