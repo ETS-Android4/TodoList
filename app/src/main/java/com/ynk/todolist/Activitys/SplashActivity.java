@@ -37,24 +37,24 @@ public class SplashActivity extends Activity {
     }
 
     private void setAnimation() {
-        ObjectAnimator scaleXAnimation = ObjectAnimator.ofFloat(findViewById(R.id.tvBottomText), "scaleX", 5.0F, 1.0F);
-        scaleXAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
-        scaleXAnimation.setDuration(2000);
-        ObjectAnimator scaleYAnimation = ObjectAnimator.ofFloat(findViewById(R.id.tvBottomText), "scaleY", 5.0F, 1.0F);
-        scaleYAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
-        scaleYAnimation.setDuration(2000);
-        ObjectAnimator alphaAnimation = ObjectAnimator.ofFloat(findViewById(R.id.tvBottomText), "alpha", 0.0F, 1.0F);
-        alphaAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
-        alphaAnimation.setDuration(2000);
-        AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.play(scaleXAnimation).with(scaleYAnimation).with(alphaAnimation);
-        animatorSet.setStartDelay(2000);
-        animatorSet.start();
+//        ObjectAnimator scaleXAnimation = ObjectAnimator.ofFloat(findViewById(R.id.tvBottomText), "scaleX", 5.0F, 1.0F);
+//        scaleXAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
+//        scaleXAnimation.setDuration(2000);
+//        ObjectAnimator scaleYAnimation = ObjectAnimator.ofFloat(findViewById(R.id.tvBottomText), "scaleY", 5.0F, 1.0F);
+//        scaleYAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
+//        scaleYAnimation.setDuration(2000);
+//        ObjectAnimator alphaAnimation = ObjectAnimator.ofFloat(findViewById(R.id.tvBottomText), "alpha", 0.0F, 1.0F);
+//        alphaAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
+//        alphaAnimation.setDuration(2000);
+//        AnimatorSet animatorSet = new AnimatorSet();
+//        animatorSet.play(scaleXAnimation).with(scaleYAnimation).with(alphaAnimation);
+//        animatorSet.setStartDelay(2000);
+//        animatorSet.start();
 
 
         findViewById(R.id.ivImageLogo).setAlpha(1.0F);
-        Animation anim = AnimationUtils.loadAnimation(this, R.anim.fade);
-        findViewById(R.id.ivImageLogo).startAnimation(anim);
+//        Animation anim = AnimationUtils.loadAnimation(this, R.anim.fade);
+//        findViewById(R.id.ivImageLogo).startAnimation(anim);
     }
 
 }

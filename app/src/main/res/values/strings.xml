@@ -26,8 +26,8 @@
     <string name="forgetPasswordTitle">Forget Password ?</string>
     <string name="clickHere">Click Here</string>
 
-    <string name="todoListSearch">Search TodoList…</string>
-    <string name="todoListItemSearch">Search TodoList Item…</string>
+    <string name="todoListSearch">Search Lineups…</string>
+    <string name="todoListItemSearch">Search Lineup Tasks…</string>
 
     <string name="todoListPriorityLow">Low</string>
     <string name="todoListPriorityNormal">Normal</string>
@@ -104,14 +104,14 @@
 
 
     <string name="todoListItemDeleteMessage">Lineup Task is deleted.</string>
-    <string name="todoListItemStatusMessage">Lineup Task is finish.</string>
-    <string name="todoListItemUpdateMessage">Lineup Task is update.</string>
-    <string name="todoListItemCreateMessage">Lineup Task is create.</string>
+    <string name="todoListItemStatusMessage">Lineup Task is finished.</string>
+    <string name="todoListItemUpdateMessage">Lineup Task is updated.</string>
+    <string name="todoListItemCreateMessage">Lineup Task is created.</string>
 
     <string name="todoListDeleteMessage">Lineup is deleted.</string>
-    <string name="todoListStatusMessage">Lineup is finish.</string>
-    <string name="todoListUpdateMessage">Lineup is update.</string>
-    <string name="todoListCreateMessage">Lineup is create.</string>
+    <string name="todoListStatusMessage">Lineup is finished.</string>
+    <string name="todoListUpdateMessage">Lineup is updated.</string>
+    <string name="todoListCreateMessage">Lineup is created.</string>
     <string name="todoListPriority">Priority</string>
     <string name="todoListFilterKeyword">Type keyword</string>
     <string name="todoListFilterStatus">Status</string>

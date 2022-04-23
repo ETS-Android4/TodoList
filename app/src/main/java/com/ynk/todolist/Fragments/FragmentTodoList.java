@@ -182,7 +182,7 @@ public class FragmentTodoList extends Fragment {
         Toolbar toolbar = view.findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(R.drawable.ic_menu);
         toolbar.setTitle(getString(R.string.todoListPageTitle, user.getUserNameSurname()));
-        toolbar.setSubtitle(getString(R.string.todoListPageSubTitle));
+//        toolbar.setSubtitle(getString(R.string.todoListPageSubTitle));
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
 
 //Uncomment        tvContinuesCount = view.findViewById(R.id.tvContinuesCount);
@@ -499,27 +499,27 @@ public class FragmentTodoList extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-        inflater.inflate(R.menu.menu_search, menu);
-
-        MenuItem searchItem = menu.findItem(R.id.searchBar);
-        SearchView searchView = (SearchView) searchItem.getActionView();
-        searchView.setQueryHint(getString(R.string.todoListSearch));
-        searchView.setOnQueryTextListener(searchListener);
-        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
-            @Override
-            public boolean onClose() {
-                searchedLists.clear();
-                searchedLists.addAll(todoLists);
-                adapterTodoList.notifyDataSetChanged();
-                return false;
-            }
-        });
-        EditText searchEditText = searchView.findViewById(android.support.v7.appcompat.R.id.search_src_text);
-        searchEditText.setHintTextColor(getResources().getColor(R.color.white));
-        if (lastSearch != null && !lastSearch.isEmpty()) {
-            searchView.setIconified(false);
-            searchView.setQuery(lastSearch, false);
-        }
+//        inflater.inflate(R.menu.menu_search, menu);
+//
+//        MenuItem searchItem = menu.findItem(R.id.searchBar);
+//        SearchView searchView = (SearchView) searchItem.getActionView();
+//        searchView.setQueryHint(getString(R.string.todoListSearch));
+//        searchView.setOnQueryTextListener(searchListener);
+//        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
+//            @Override
+//            public boolean onClose() {
+//                searchedLists.clear();
+//                searchedLists.addAll(todoLists);
+//                adapterTodoList.notifyDataSetChanged();
+//                return false;
+//            }
+//        });
+//        EditText searchEditText = searchView.findViewById(android.support.v7.appcompat.R.id.search_src_text);
+//        searchEditText.setHintTextColor(getResources().getColor(R.color.white));
+//        if (lastSearch != null && !lastSearch.isEmpty()) {
+//            searchView.setIconified(false);
+//            searchView.setQuery(lastSearch, false);
+//        }
     }
 
 
