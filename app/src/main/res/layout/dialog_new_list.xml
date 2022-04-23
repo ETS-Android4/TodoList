@@ -63,6 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/spacing_medium"
+                    android:layout_marginTop="30dp"
                     android:text="@string/todoListDialogPriority"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/grey_60" />
@@ -85,16 +86,18 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:padding="@dimen/spacing_middle">
 
                 <android.support.v7.widget.AppCompatButton
                     android:id="@+id/buttonSave"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/submit_button_backgorund"
                     android:gravity="center"
                     android:text="@string/todoListItemDialogSubmitNew"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
                     android:theme="@style/Button.Primary" />
 
                 <TextView

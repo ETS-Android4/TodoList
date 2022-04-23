@@ -34,8 +34,8 @@
                 app:contentPadding="@dimen/spacing_medium">
 
                 <ImageView
-                    android:layout_width="@dimen/spacing_xxxxxlarge"
-                    android:layout_height="@dimen/spacing_xxxxxlarge"
+                    android:layout_width="140dp"
+                    android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@mipmap/logo" />
 

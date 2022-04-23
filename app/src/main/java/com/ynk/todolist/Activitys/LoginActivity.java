@@ -8,10 +8,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.ynk.todolist.Database.AppDatabase;
 import com.ynk.todolist.Database.DAO;
+import com.ynk.todolist.ForgetPassword;
 import com.ynk.todolist.Model.User;
 import com.ynk.todolist.R;
 import com.ynk.todolist.Tools.Utils;
@@ -30,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
 
     //Components
     private TextInputEditText edtUsername, edtPassword;
+    TextView tvForgetPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
 
         edtUsername = findViewById(R.id.etUserName);
         edtPassword = findViewById(R.id.etPassword);
-
+        tvForgetPassword = findViewById(R.id.tvForgetPassword);
 
         findViewById(R.id.btnSignIn).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,6 +84,14 @@ public class LoginActivity extends AppCompatActivity {
                 Intent signUpIntent = new Intent(LoginActivity.this, SignupActivity.class);
                 startActivity(signUpIntent);
             }
+        });
+
+        tvForgetPassword.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+            Intent intent = new Intent(getApplicationContext(), ForgetPassword.class);
+            startActivity(intent);
+          }
         });
 
     }

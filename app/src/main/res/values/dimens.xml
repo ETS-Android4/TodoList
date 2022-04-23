@@ -23,7 +23,7 @@
     <dimen name="spacing_xmlarge">40dp</dimen>
     <dimen name="spacing_xxxlarge">55dp</dimen>
     <dimen name="spacing_xxxxlarge">100dp</dimen>
-    <dimen name="spacing_xxxxxlarge">95dp</dimen>
+    <dimen name="spacing_xxxxxlarge">120dp</dimen>
     <dimen name="loginHeaderHeight">220dp</dimen>
 
     <dimen name="todoListHeaderCardMarginTop">-40dp</dimen>

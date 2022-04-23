@@ -22,10 +22,13 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:padding="@dimen/spacing_middle"
             android:tint="@color/grey_60"
+            android:visibility="gone"
             app:srcCompat="@drawable/ic_expand_arrow" />
 
         <RelativeLayout
             android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_height="wrap_content">
 
             <LinearLayout
@@ -112,8 +115,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey_3"
+        android:padding="10dp"
         android:orientation="vertical"
-        android:visibility="gone">
+
+        android:visibility="visible">
 
         <TextView
             android:id="@+id/tvItemDesc"
@@ -122,6 +127,8 @@
             android:layout_marginLeft="@dimen/spacing_large"
             android:layout_marginRight="@dimen/spacing_large"
             android:text="Item Desc"
+            android:textColor="#000"
+            android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
 
@@ -133,8 +140,9 @@
             android:layout_marginTop="@dimen/spacing_medium"
             android:layout_marginRight="@dimen/spacing_large"
             android:text="Item Create Date"
+            android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-            android:textColor="@color/grey_40" />
+            android:textColor="#000" />
 
 
         <View
@@ -144,10 +152,13 @@
             android:background="@color/grey_10" />
 
         <LinearLayout
+            android:layout_marginBottom="10dp"
             android:id="@+id/llActionLayout"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_xsmall"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:weightSum="3">
 
@@ -160,11 +171,13 @@
                 android:layout_marginLeft="@dimen/spacing_middle"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:background="@drawable/btn_rounded_red_outline"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20sp"
                     android:layout_gravity="center"
                     android:tint="@color/red_500"
                     app:srcCompat="@drawable/ic_delete" />
@@ -179,6 +192,7 @@
                     android:layout_marginRight="@dimen/spacing_xsmall"
                     android:gravity="center_vertical"
                     android:text="@string/todoListItemDelete"
+                    android:textColor="@color/red_700"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textStyle="bold" />
 
@@ -186,14 +200,18 @@
 
             <LinearLayout
                 android:id="@+id/layoutEdit"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/btn_rounded_blue_outline"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:layout_marginLeft="20sp"
                     android:layout_gravity="center"
                     android:tint="@color/blue_500"
                     app:srcCompat="@drawable/ic_edit" />
@@ -207,6 +225,7 @@
                     android:layout_marginRight="@dimen/spacing_xsmall"
                     android:gravity="center_vertical"
                     android:text="@string/todoListItemUpdate"
+                    android:textColor="@color/blue_700"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textStyle="bold" />
 
@@ -219,11 +238,13 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:background="@drawable/btn_rounded_green_outline"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20sp"
                     android:layout_gravity="center"
                     android:tint="@color/green_500"
                     app:srcCompat="@drawable/ic_check" />
@@ -238,6 +259,7 @@
                     android:layout_marginRight="@dimen/spacing_xsmall"
                     android:gravity="center_vertical"
                     android:text="@string/todoListItemComplete"
+                    android:textColor="@color/green_700"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textStyle="bold" />
 
