@@ -93,7 +93,7 @@
                     android:id="@+id/buttonSave"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/submit_button_backgorund"
+                    android:background="@color/gPrimary"
                     android:gravity="center"
                     android:text="@string/todoListItemDialogSubmitNew"
                     android:paddingLeft="50dp"
