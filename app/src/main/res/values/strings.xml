@@ -10,6 +10,7 @@
 
 
   <string name="loginErrorMessage">Check the username and password. Please!</string>
+  <string name="wrongEmailErrorMessage">Email is not registered yet!</string>
   <string name="todoListPageTitle">Hello, %1s</string>
   <string name="todoListPageSubTitle">Welcome to UR Lineups</string>
 
@@ -20,6 +21,7 @@
   <string name="loginNoAccountTitle">Do you have not an account? </string>
   <string name="loginSignUpTitle">Sign Up</string>
   <string name="loginUserNameError">Please fill the Username field!</string>
+  <string name="forgetPassEmailError">Please fill the Email field!</string>
   <string name="loginPasswordError">Please fill the Password field!</string>
   <string name="signUpSuccessMessage">SignUp Success!</string>
   <string name="signUpErrorMessage">Registration is available. Please check E-Mail or Username!</string>

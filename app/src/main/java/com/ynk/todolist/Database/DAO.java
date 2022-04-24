@@ -43,6 +43,9 @@ public interface DAO {
     @Query("SELECT * FROM user WHERE userName = :userName")
     User loginControl(String userName);
 
+    @Query("SELECT * FROM user WHERE userMail = :userMail")
+    User forgetPasswordControl(String userMail);
+
     @Query("SELECT COUNT(*) FROM user WHERE userName = :userName OR userMail = :userMail")
     Integer signUpControl(String userName, String userMail);
 
